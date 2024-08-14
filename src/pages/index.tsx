@@ -9,7 +9,14 @@ export default function Home() {
   return (
     <div>hello broo
 
-      <VideoCard></VideoCard>
+      <VideoCard
+        title={"Master Rollup.js with these one video"}
+        image={"imgone.jpg"}
+        author={"ImranCode"}
+        views={"70M"}
+        time={"13 days ago"}
+
+      ></VideoCard>
     </div>
   );
 }

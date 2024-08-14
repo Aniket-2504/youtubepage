@@ -1,25 +1,32 @@
 
 
-function VideoCard() {
+
+function VideoCard(props: any) {
   return (
-    <div className="grid grid-cols-4 gap-6 h-[30vh] m-16 text-center ">
-       <div className=" rounded-lg  border ">
-       <img src="/imgone.jpg" alt="image" className=" w-full h-full object-cover" />
-       </div>
-       <div className=" rounded-lg  border ">
-            <img src="/imgtwo.jpg" alt="image" className=" w-full h-full object-cover" />
-
-       </div>
-       <div className=" rounded-lg  border">
-       <img src="/imgthree.jpg" alt="image" className=" w-full h-full object-cover" />
-
-       </div>
-       <div className=" rounded-lg  border">
-       <img src="/imgfour.jpg" alt="image" className=" w-full h-full object-cover" />
-
-       </div>
+    <div>
+      <img src={props.image} alt="image" className="rounded-xl" />
+      <div className="grid grid-cols-12 pt-8">
+        <div className="col-span-1">
+          <img
+            className={"rounded-full h-20 w-20 object-cover"}
+            src={props.image}
+            alt="img"></img>
+        </div>
+        <div className="col-span-11 pl-1">
+            <div>
+            {props.title}
+            </div>
+            <div className="col-span-11  text-gray-400 text-base">
+           {props.author}
+        </div>
+        <div className="col-span-11  text-gray-500 text-base">
+            {props.views} | {props.time}
+        </div>
+        </div>
+   
+      </div>
     </div>
-  )
+  );
 }
 
-export default VideoCard
+export default VideoCard;
