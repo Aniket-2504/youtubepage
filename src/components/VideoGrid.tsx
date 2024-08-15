@@ -60,7 +60,7 @@ const VIDEOS = [{
 
 export const VideoGrid = ()=>{
     return(
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2"> 
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 p-6"> 
 
         {VIDEOS.map(video=> 
             <div>
