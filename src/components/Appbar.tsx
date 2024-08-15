@@ -1,17 +1,19 @@
+import { Searchbar } from "./Searchbar"
+
 export const Appbar =()=>{
 
     return (
-        <div className="flex justify-between pt-4 align-middle pb-11">
+        <div className="flex justify-between pt-4 align-middle pb-11 items-center">
             <div >
-            <img src="./youtube.png" alt="image here " className="h-12 w-30 pl-6"  />
+            <img src="./youtube.png" alt="image here " className="h-10 w-25 pl-6"  />
             </div>
             <div>
-                <input type="text"  placeholder="search" className="p-4 rounded-l-full  bg-gray-900 h-[80%] w-[40vh]"/>
-                <button className="rounded-r-full bg-gray-700 h-[80%] w-[10vh]">search</button>
+                <Searchbar/>
             </div>
 
             <div>
-                <button className=" rounded-full bg-gray-800 h-[5vh] w-[12vh]">SignIn Here</button>
+                <button className=" rounded-full bg-zinc-800 h-[5vh] w-[12vh] text-[17px] text-gray-400">SignIn</button>
+
             </div>
         </div>
     )

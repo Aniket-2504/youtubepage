@@ -28,6 +28,34 @@ const VIDEOS = [{
     views: "70K",
     time: "20 days ago",
 },
+{
+    title: "How to become a senior dev",
+    image: "imgfour.jpg",
+    author: "ImranCode",
+    views: "200K",
+    time: "1 month ago",
+},
+{
+    title: "Deployment strategies like senior dev",
+    image: "imgone.jpg",
+    author: "ImranCode",
+    views: "70K",
+    time: "20 days ago",
+},
+{
+    title: "Master Rollup.js with these one video",
+    image: "imgtwo.jpg",
+    author: "ImranCode",
+    views: "7K",
+    time: "13 days ago",
+},
+{
+    title: "Project Setup like senior dev",
+    image: "imgthree.jpg",
+    author: "ImranCode",
+    views: "20K",
+    time: "3 days ago",
+},
 ]
 
 export const VideoGrid = ()=>{
