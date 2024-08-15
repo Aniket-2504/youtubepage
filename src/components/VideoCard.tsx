@@ -1,18 +1,18 @@
 
 
 
-function VideoCard(props: any) {
+export function VideoCard(props: any) {
   return (
-    <div>
-      <img src={props.image} alt="image" className="rounded-xl" />
-      <div className="grid grid-cols-12 pt-8">
+    <div className="p-3">
+      <img src={props.image} alt="image" className="rounded-xl border" />
+      <div className="grid grid-cols-12 pt-3">
         <div className="col-span-1">
           <img
-            className={"rounded-full h-20 w-20 object-cover"}
+            className={"rounded-full h-10 w-10 object-cover"}
             src={props.image}
             alt="img"></img>
         </div>
-        <div className="col-span-11 pl-1">
+        <div className="col-span-11 pl-3">
             <div>
             {props.title}
             </div>
@@ -23,10 +23,8 @@ function VideoCard(props: any) {
             {props.views} | {props.time}
         </div>
         </div>
-   
       </div>
     </div>
-  );
-}
+  )
+};
 
-export default VideoCard;
